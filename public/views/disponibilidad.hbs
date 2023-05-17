@@ -68,12 +68,14 @@
 									<div class="form-group">
 										<span class="form-label">Departing</span>
 										<input class="form-control" type="date" id="departing" required>
+										<div id="errorDeparting"></div>
 									</div>
 								</div>
 								<div class="col-md-3">
 									<div class="form-group">
 										<span class="form-label">Returning</span>
 										<input class="form-control" type="date" id="returning" required>
+										<div id="errorReturning"></div>
 									</div>
 								</div>
 								<div class="col-md-2">
@@ -113,7 +115,7 @@
 								</div>
 								<div class="col-md-3">
 									<div class="form-btn">
-										<button class="submit-btn">Show flights</button>
+										<button class="submit-btn" type="button" id="showFligths">Show flights</button>
 									</div>
 								</div>
 							</div>
@@ -124,5 +126,5 @@
 		</div>
 	</div>
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
-<script src="funciones.js"></script>
+<script src="../js/funciones.js"></script>
 </html>
