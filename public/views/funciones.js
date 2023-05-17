@@ -1,16 +1,15 @@
-function validateDates() {
-    const departingDate = new Date(document.getElementById("departing").value);
-    const returningDate = new Date(document.getElementById("returning").value);
+document.getElementById('showflights').addEventListener('click', function() {
+    const departingDate = new Date(document.getElementById('departing').value);
+    const returningDate = new Date(document.getElementById('returning').value);
     const currentDate = new Date();
-
+    
     if (departingDate < currentDate || returningDate < currentDate) {
-        alert("Error: Departing and returning dates cannot be in the past.");
+        alert("Error: •	La fecha departing o la fecha returning es inferior a la fecha actual..");
     } else if (departingDate > returningDate) {
-        alert("Error: Departing date cannot be greater than returning date.");
+        alert("Error: La fecha de salida no puede ser posterior a la fecha de regreso.");
     } else {
-        // Aquí puedes realizar las acciones necesarias si las validaciones son exitosas
-        // Por ejemplo, mostrar los vuelos disponibles
-        alert("Flight search successful!");
+        alert("Búsqueda de vuelo exitosa!");
     }
-}
+})
+
 
